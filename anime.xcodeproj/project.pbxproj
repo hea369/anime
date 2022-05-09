@@ -13,6 +13,8 @@
 		D896385228294ABA00AAE6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D896385028294ABA00AAE6AA /* Main.storyboard */; };
 		D896385428294ABC00AAE6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896385328294ABC00AAE6AA /* Assets.xcassets */; };
 		D896385728294ABC00AAE6AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D896385528294ABC00AAE6AA /* LaunchScreen.storyboard */; };
+		D89638602829509100AAE6AA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896385F2829509100AAE6AA /* SplashViewController.swift */; };
+		D8963862282950BB00AAE6AA /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8963861282950BB00AAE6AA /* Splash.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D896385328294ABC00AAE6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D896385628294ABC00AAE6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D896385828294ABC00AAE6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D896385F2829509100AAE6AA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D8963861282950BB00AAE6AA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		D896384928294ABA00AAE6AA /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				D896385E2829503800AAE6AA /* Splash */,
 				D896384A28294ABA00AAE6AA /* AppDelegate.swift */,
 				D896384C28294ABA00AAE6AA /* SceneDelegate.swift */,
 				D896384E28294ABA00AAE6AA /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				D896385828294ABC00AAE6AA /* Info.plist */,
 			);
 			path = anime;
+			sourceTree = "<group>";
+		};
+		D896385E2829503800AAE6AA /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D8963861282950BB00AAE6AA /* Splash.storyboard */,
+				D896385F2829509100AAE6AA /* SplashViewController.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 				D896385728294ABC00AAE6AA /* LaunchScreen.storyboard in Resources */,
 				D896385428294ABC00AAE6AA /* Assets.xcassets in Resources */,
 				D896385228294ABA00AAE6AA /* Main.storyboard in Resources */,
+				D8963862282950BB00AAE6AA /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				D896384F28294ABA00AAE6AA /* ViewController.swift in Sources */,
 				D896384B28294ABA00AAE6AA /* AppDelegate.swift in Sources */,
 				D896384D28294ABA00AAE6AA /* SceneDelegate.swift in Sources */,
+				D89638602829509100AAE6AA /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,9 +306,10 @@
 				DEVELOPMENT_TEAM = 69T5P6ASGW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = anime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "애니매이션 순위";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,9 +335,10 @@
 				DEVELOPMENT_TEAM = 69T5P6ASGW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = anime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "애니매이션 순위";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
