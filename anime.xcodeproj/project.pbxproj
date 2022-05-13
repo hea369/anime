@@ -9,25 +9,28 @@
 /* Begin PBXBuildFile section */
 		D896384B28294ABA00AAE6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896384A28294ABA00AAE6AA /* AppDelegate.swift */; };
 		D896384D28294ABA00AAE6AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896384C28294ABA00AAE6AA /* SceneDelegate.swift */; };
-		D896384F28294ABA00AAE6AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896384E28294ABA00AAE6AA /* ViewController.swift */; };
 		D896385228294ABA00AAE6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D896385028294ABA00AAE6AA /* Main.storyboard */; };
 		D896385428294ABC00AAE6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896385328294ABC00AAE6AA /* Assets.xcassets */; };
 		D896385728294ABC00AAE6AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D896385528294ABC00AAE6AA /* LaunchScreen.storyboard */; };
 		D89638602829509100AAE6AA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896385F2829509100AAE6AA /* SplashViewController.swift */; };
 		D8963862282950BB00AAE6AA /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8963861282950BB00AAE6AA /* Splash.storyboard */; };
+		D8D456E3282E26FF0040BF8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D456E2282E26FF0040BF8B /* MainViewController.swift */; };
+		D8D456E6282E2FCF0040BF8B /* AnimeTreadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D456E5282E2FCF0040BF8B /* AnimeTreadingTableViewCell.swift */; };
+		D8D456E9282E3B0E0040BF8B /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D8D456E8282E3B0E0040BF8B /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D896384728294ABA00AAE6AA /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D896384A28294ABA00AAE6AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D896384C28294ABA00AAE6AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D896384E28294ABA00AAE6AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D896385128294ABA00AAE6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D896385328294ABC00AAE6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D896385628294ABC00AAE6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D896385828294ABC00AAE6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D896385F2829509100AAE6AA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D8963861282950BB00AAE6AA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		D8D456E2282E26FF0040BF8B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D8D456E5282E2FCF0040BF8B /* AnimeTreadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTreadingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D456E9282E3B0E0040BF8B /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,11 +64,10 @@
 		D896384928294ABA00AAE6AA /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				D8D456E4282E27650040BF8B /* Main */,
 				D896385E2829503800AAE6AA /* Splash */,
 				D896384A28294ABA00AAE6AA /* AppDelegate.swift */,
 				D896384C28294ABA00AAE6AA /* SceneDelegate.swift */,
-				D896384E28294ABA00AAE6AA /* ViewController.swift */,
-				D896385028294ABA00AAE6AA /* Main.storyboard */,
 				D896385328294ABC00AAE6AA /* Assets.xcassets */,
 				D896385528294ABC00AAE6AA /* LaunchScreen.storyboard */,
 				D896385828294ABC00AAE6AA /* Info.plist */,
@@ -79,6 +82,16 @@
 				D896385F2829509100AAE6AA /* SplashViewController.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		D8D456E4282E27650040BF8B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D896385028294ABA00AAE6AA /* Main.storyboard */,
+				D8D456E2282E26FF0040BF8B /* MainViewController.swift */,
+				D8D456E5282E2FCF0040BF8B /* AnimeTreadingTableViewCell.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +110,9 @@
 			dependencies = (
 			);
 			name = anime;
+			packageProductDependencies = (
+				D8D456E8282E3B0E0040BF8B /* Nuke */,
+			);
 			productName = anime;
 			productReference = D896384728294ABA00AAE6AA /* anime.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +141,9 @@
 				Base,
 			);
 			mainGroup = D896383E28294ABA00AAE6AA;
+			packageReferences = (
+				D8D456E7282E3B0E0040BF8B /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = D896384828294ABA00AAE6AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,10 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D896384F28294ABA00AAE6AA /* ViewController.swift in Sources */,
 				D896384B28294ABA00AAE6AA /* AppDelegate.swift in Sources */,
 				D896384D28294ABA00AAE6AA /* SceneDelegate.swift in Sources */,
 				D89638602829509100AAE6AA /* SplashViewController.swift in Sources */,
+				D8D456E6282E2FCF0040BF8B /* AnimeTreadingTableViewCell.swift in Sources */,
+				D8D456E3282E26FF0040BF8B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8D456E7282E3B0E0040BF8B /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8D456E8282E3B0E0040BF8B /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8D456E7282E3B0E0040BF8B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D896383F28294ABA00AAE6AA /* Project object */;
 }
