@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D87A9D87283286EE0002342F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D87A9D86283286EE0002342F /* Alamofire */; };
 		D896384B28294ABA00AAE6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896384A28294ABA00AAE6AA /* AppDelegate.swift */; };
 		D896384D28294ABA00AAE6AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896384C28294ABA00AAE6AA /* SceneDelegate.swift */; };
 		D896385228294ABA00AAE6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D896385028294ABA00AAE6AA /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8D456E9282E3B0E0040BF8B /* Nuke in Frameworks */,
+				D87A9D87283286EE0002342F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +114,7 @@
 			name = anime;
 			packageProductDependencies = (
 				D8D456E8282E3B0E0040BF8B /* Nuke */,
+				D87A9D86283286EE0002342F /* Alamofire */,
 			);
 			productName = anime;
 			productReference = D896384728294ABA00AAE6AA /* anime.app */;
@@ -143,6 +146,7 @@
 			mainGroup = D896383E28294ABA00AAE6AA;
 			packageReferences = (
 				D8D456E7282E3B0E0040BF8B /* XCRemoteSwiftPackageReference "Nuke" */,
+				D87A9D85283286EE0002342F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = D896384828294ABA00AAE6AA /* Products */;
 			projectDirPath = "";
@@ -332,6 +336,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +366,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +404,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D87A9D85283286EE0002342F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.1;
+			};
+		};
 		D8D456E7282E3B0E0040BF8B /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke.git";
@@ -409,6 +423,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D87A9D86283286EE0002342F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D87A9D85283286EE0002342F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		D8D456E8282E3B0E0040BF8B /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D8D456E7282E3B0E0040BF8B /* XCRemoteSwiftPackageReference "Nuke" */;
