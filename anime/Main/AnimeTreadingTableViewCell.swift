@@ -11,4 +11,11 @@ class AnimeTreadingTableViewCell: UITableViewCell {
     @IBOutlet var animePosterimageView: UIImageView!
     @IBOutlet var animeTitleLabel: UILabel!
     @IBOutlet var animeSynobsisLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        animePosterimageView.layer.cornerRadius = 15
+        animePosterimageView.layer.borderColor = UIColor.red.cgColor
+        animePosterimageView.layer.borderWidth = 1
+    }
 }

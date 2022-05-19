@@ -1,36 +1,37 @@
 //
-//  MainViewController.swift
+//  MangeViewController.swift
 //  anime
 //
-//  Created by 박호현 on 2022/05/13.
+//  Created by 박호현 on 2022/05/19.
 //
 
-import UIKit
 import Nuke
 import Alamofire
+import UIKit
 
-class MainViewController: UIViewController {
+class MangeViewController: UIViewController {
+    
     @IBOutlet var tableView: UITableView!
     var model: AnimeModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AF.request("https://kitsu.io/api/edge/anime?page[limit]=20").response { response in
+        AF.request("https://kitsu.io/api/edge/manga").response { response in
             debugPrint(response)
             guard let data = response.data else { return }
-            let model = try! JSONDecoder().decode(AnimeModel.self, from: data) 
+            let model = try! JSONDecoder().decode(AnimeModel.self, from: data)
             print(model)
             self.model = model
             self.tableView.reloadData()
         }
     }
+    
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension MangeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model?.data.count ?? 0
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AnimeTreadingTableViewCell", for: indexPath) as? AnimeTreadingTableViewCell,
               let data = model?.data[indexPath.row],
@@ -42,7 +43,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let url = model?.links.next,
-                indexPath.row == (model?.data.count ?? 0) - 1 else { return }
+              indexPath.row == (model?.data.count ?? 0) - 1 else { return }
         AF.request(url).response { response in
             debugPrint(response)
             guard let data = response.data else { return }
@@ -54,3 +55,4 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
+

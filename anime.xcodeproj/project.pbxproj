@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84BE15528368ABB00BCD55A /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84BE15428368ABB00BCD55A /* AnimeModel.swift */; };
+		D84BE15828368E3C00BCD55A /* MangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84BE15728368E3C00BCD55A /* MangeViewController.swift */; };
 		D87A9D87283286EE0002342F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D87A9D86283286EE0002342F /* Alamofire */; };
 		D896384B28294ABA00AAE6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896384A28294ABA00AAE6AA /* AppDelegate.swift */; };
 		D896384D28294ABA00AAE6AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896384C28294ABA00AAE6AA /* SceneDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D84BE15428368ABB00BCD55A /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		D84BE15728368E3C00BCD55A /* MangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangeViewController.swift; sourceTree = "<group>"; };
 		D896384728294ABA00AAE6AA /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D896384A28294ABA00AAE6AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D896384C28294ABA00AAE6AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D84BE15628368E2B00BCD55A /* Mange */ = {
+			isa = PBXGroup;
+			children = (
+				D84BE15728368E3C00BCD55A /* MangeViewController.swift */,
+			);
+			path = Mange;
+			sourceTree = "<group>";
+		};
 		D896383E28294ABA00AAE6AA = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +78,7 @@
 		D896384928294ABA00AAE6AA /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				D84BE15628368E2B00BCD55A /* Mange */,
 				D8D456E4282E27650040BF8B /* Main */,
 				D896385E2829503800AAE6AA /* Splash */,
 				D896384A28294ABA00AAE6AA /* AppDelegate.swift */,
@@ -92,6 +105,7 @@
 				D896385028294ABA00AAE6AA /* Main.storyboard */,
 				D8D456E2282E26FF0040BF8B /* MainViewController.swift */,
 				D8D456E5282E2FCF0040BF8B /* AnimeTreadingTableViewCell.swift */,
+				D84BE15428368ABB00BCD55A /* AnimeModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -178,8 +192,10 @@
 			files = (
 				D896384B28294ABA00AAE6AA /* AppDelegate.swift in Sources */,
 				D896384D28294ABA00AAE6AA /* SceneDelegate.swift in Sources */,
+				D84BE15828368E3C00BCD55A /* MangeViewController.swift in Sources */,
 				D89638602829509100AAE6AA /* SplashViewController.swift in Sources */,
 				D8D456E6282E2FCF0040BF8B /* AnimeTreadingTableViewCell.swift in Sources */,
+				D84BE15528368ABB00BCD55A /* AnimeModel.swift in Sources */,
 				D8D456E3282E26FF0040BF8B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
